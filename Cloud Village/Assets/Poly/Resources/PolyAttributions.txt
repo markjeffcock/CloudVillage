@@ -6,6 +6,12 @@ URL: https://poly.google.com/view/elKlgIbZX_m
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Wood bridge
+Author: Poly by Google
+URL: https://poly.google.com/view/ccxRFIgIvIL
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Wooden plank
 Author: Justin Randall
 URL: https://poly.google.com/view/990Ml-tDxFU

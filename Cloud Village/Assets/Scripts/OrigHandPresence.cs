@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
-public class HandPresence : MonoBehaviour
+public class OrigHandPresence : MonoBehaviour
 {
     private InputDevice targetDevice;
 
@@ -19,7 +19,7 @@ public class HandPresence : MonoBehaviour
             // Debug.Log(item.name + item.characteristics);
         }
 
-        if (devices.Count > 0)
+        if(devices.Count > 0)
         {
             targetDevice = devices[0];
         }

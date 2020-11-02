@@ -387,7 +387,7 @@ Transform:
   - {fileID: 423842573}
   - {fileID: 332890067}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79838686 stripped
 GameObject:
@@ -6988,7 +6988,7 @@ PrefabInstance:
     - target: {fileID: 8777499140837109251, guid: 802bf5b762bf04340aaada09be92548e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8777499140837109251, guid: 802bf5b762bf04340aaada09be92548e,
         type: 3}
@@ -15419,6 +15419,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f488d6c54a65e2b408a2d546780761e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showController: 0
+  controllerCharacteristics: 0
+  controllerPrefabs:
+  - {fileID: -927199367670048503, guid: 3ad3c8a0cd60ccd489485ec2973dd9bf, type: 3}
+  - {fileID: -927199367670048503, guid: a0080df8c0c15724d954d8a5b0e9a592, type: 3}
+  - {fileID: -927199367670048503, guid: 6713cf46d4f46b847abde47e626d8537, type: 3}
+  - {fileID: -927199367670048503, guid: a80f072576863f64d88a418ce0403b4d, type: 3}
+  - {fileID: -927199367670048503, guid: 115d751b184b79946acb67c5c52446a6, type: 3}
+  - {fileID: -927199367670048503, guid: 548065693cc062a498475a5aeb86b70c, type: 3}
+  - {fileID: -927199367670048503, guid: c081c5f65c2facd4284b1d6315923bdc, type: 3}
+  - {fileID: -927199367670048503, guid: b165cfd94b7c7584c960a16f595bbc5e, type: 3}
+  - {fileID: -927199367670048503, guid: b165cfd94b7c7584c960a16f595bbc5e, type: 3}
+  handModelPrefab: {fileID: 0}
 --- !u!1 &1998201461 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644735938268155785, guid: c7ebaf2c6c5a70e4ba90d3f982a987ee,

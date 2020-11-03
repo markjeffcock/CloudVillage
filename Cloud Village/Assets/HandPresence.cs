@@ -19,6 +19,13 @@ public class HandPresence : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TryInitialise();
+    }
+
+    // Check to see if COntrollers are available
+
+    void TryInitialise()
+    {
         List<InputDevice> devices = new List<InputDevice>();
 
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
@@ -32,7 +39,7 @@ public class HandPresence : MonoBehaviour
         {
             targetDevice = devices[0];
             GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
-            if(prefab)
+            if (prefab)
             {
                 spawnedController = Instantiate(prefab, transform);
             }
@@ -46,7 +53,6 @@ public class HandPresence : MonoBehaviour
             handAnimator = spawnedHandModel.GetComponent<Animator>();
 
         }
-
     }
 
     // Hand Animation
@@ -84,18 +90,26 @@ public class HandPresence : MonoBehaviour
 
        // if (targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 primary2DAxisValue) && primary2DAxisValue != Vector2.zero)
        //     Debug.Log("Primary Touchpad" + primary2DAxisValue);
+        
+       // Try to find controllers
 
-        if(showController)
+        if(!targetDevice.isValid)
         {
-            spawnedHandModel.SetActive(false);
-            spawnedController.SetActive(true);
+            TryInitialise();
         }
         else
         {
-            spawnedHandModel.SetActive(true);
-            spawnedController.SetActive(false);
-            UpdateHandAnimation();
+            if (showController)
+            {
+                spawnedHandModel.SetActive(false);
+                spawnedController.SetActive(true);
+            }
+            else
+            {
+                spawnedHandModel.SetActive(true);
+                spawnedController.SetActive(false);
+                UpdateHandAnimation();
+            }
         }
-
     }
 }

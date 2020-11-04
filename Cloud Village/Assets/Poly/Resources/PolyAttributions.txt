@@ -1,8 +1,32 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: Bottle of wine
+Author: Poly by Google
+URL: https://poly.google.com/view/65Hf2EMEo4s
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Glass of wine
+Author: Poly by Google
+URL: https://poly.google.com/view/apyVDvUlu-_
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: la boule
 Author: bryan burgat
 URL: https://poly.google.com/view/elKlgIbZX_m
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Wine bottle
+Author: Poly by Google
+URL: https://poly.google.com/view/9cIBrL3pbex
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Wine glass
+Author: Poly by Google
+URL: https://poly.google.com/view/0xiCAJbA2d_
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

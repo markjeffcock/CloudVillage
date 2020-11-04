@@ -10097,7 +10097,7 @@ PrefabInstance:
     - target: {fileID: 1384825814937569454, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.6870003
+      value: 6.6955
       objectReference: {fileID: 0}
     - target: {fileID: 1384825814937569454, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
         type: 3}
@@ -10211,7 +10211,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.5549994
+  m_Radius: 2
   m_Center: {x: -0.00000055879354, y: 7.4822054, z: 0.38424432}
 --- !u!1 &759070698 stripped
 GameObject:

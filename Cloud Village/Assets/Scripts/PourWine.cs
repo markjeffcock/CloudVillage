@@ -5,8 +5,7 @@ using UnityEngine;
 public class PourWine : MonoBehaviour
 {
     public int pourThreshold = 90;
-    public Transform origin = null;
-    public GameObject wineStream = null;
+    public GameObject wineStream;
 
     private bool isPouring = false;
    
@@ -34,16 +33,16 @@ public class PourWine : MonoBehaviour
  
     private void StartPour()
     {
-
+        wineStream.SetActive(false);
     }
 
     private void EndPour()
     {
-
+        wineStream.SetActive(false);
     }
 
     private float CalculatePourAng()
     {
-        return transform.up.y * Mathf.Rad2Deg;
+        return transform.forward.y * Mathf.Rad2Deg;
     }
 }

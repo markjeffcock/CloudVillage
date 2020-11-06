@@ -8525,6 +8525,8 @@ MonoBehaviour:
   wineStream: {fileID: 378319374}
   wineBottle: {fileID: 312883292}
   bottleTop: {fileID: 1639817579}
+  bottleTopHeight: 0
+  bottleMidHeight: 0
 --- !u!65 &312883299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15273,7 +15275,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639817579}
-  - component: {fileID: 1639817581}
   - component: {fileID: 1639817580}
   m_Layer: 0
   m_Name: BottleTop
@@ -15335,14 +15336,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1639817581
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639817578}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1643725578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 710db29e9530bb5419c75ec59f7cf7a1,

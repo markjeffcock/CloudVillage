@@ -8418,7 +8418,7 @@ PrefabInstance:
     - target: {fileID: 4907303556366814164, guid: 78c5add7ef195c94d9d75cf35245a326,
         type: 3}
       propertyPath: m_Name
-      value: Wine bottle 1
+      value: WineBottle
       objectReference: {fileID: 0}
     - target: {fileID: 4907303556366814164, guid: 78c5add7ef195c94d9d75cf35245a326,
         type: 3}
@@ -8503,19 +8503,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 312883291}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &312883293 stripped
+--- !u!1 &312883297 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8379096513601369210, guid: 78c5add7ef195c94d9d75cf35245a326,
+  m_CorrespondingSourceObject: {fileID: 4907303556366814164, guid: 78c5add7ef195c94d9d75cf35245a326,
     type: 3}
   m_PrefabInstance: {fileID: 312883291}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &312883294
+--- !u!114 &312883298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312883293}
+  m_GameObject: {fileID: 312883297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7874bbb16aae86648a6d128b030c77e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pourThreshold: 90
+  wineStream: {fileID: 378319374}
+  wineBottle: {fileID: 312883292}
+  bottleTop: {fileID: 1639817579}
+--- !u!65 &312883299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312883297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.955217, y: 69.59128, z: 19.132843}
+  m_Center: {x: -0.35938618, y: -5.1609273, z: 0.4429817}
+--- !u!114 &312883300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312883297}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -8583,13 +8612,13 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
---- !u!54 &312883295
+--- !u!54 &312883301
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312883293}
+  m_GameObject: {fileID: 312883297}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -8599,39 +8628,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &312883296
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312883293}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 20.673222, y: 79.23073, z: 20.673222}
-  m_Center: {x: 0, y: 39.6155, z: 0}
---- !u!1 &312883297 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4907303556366814164, guid: 78c5add7ef195c94d9d75cf35245a326,
-    type: 3}
-  m_PrefabInstance: {fileID: 312883291}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &312883298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312883297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7874bbb16aae86648a6d128b030c77e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pourThreshold: 90
-  wineStream: {fileID: 378319374}
 --- !u!1 &318326390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1779011389495577624, guid: c7ebaf2c6c5a70e4ba90d3f982a987ee,
@@ -15268,6 +15264,85 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 47437a621021bdc44a24430953a2fb1d, type: 2}
+--- !u!1 &1639817578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639817579}
+  - component: {fileID: 1639817581}
+  - component: {fileID: 1639817580}
+  m_Layer: 0
+  m_Name: BottleTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1639817579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639817578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 40.5, z: 0}
+  m_LocalScale: {x: 5, y: 0.01, z: 5}
+  m_Children: []
+  m_Father: {fileID: 312883292}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1639817580
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639817578}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 131b386f4ffae7048bda20d19e89a5b4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1639817581
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639817578}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1643725578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 710db29e9530bb5419c75ec59f7cf7a1,

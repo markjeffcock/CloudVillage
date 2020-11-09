@@ -490,10 +490,30 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.015
       objectReference: {fileID: 0}
+    - target: {fileID: 1944956279334294759, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235861493784132212, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4023737187003103620, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
         type: 3}
       propertyPath: m_Name
       value: Glass_of_wine_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023737187003103620, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732997519694440709, guid: 18c082379f26f8e43a1c6a7a3f951f3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c082379f26f8e43a1c6a7a3f951f3d, type: 3}
@@ -1310,7 +1330,7 @@ MonoBehaviour:
   m_OnSelectExit:
     m_PersistentCalls:
       m_Calls: []
-  m_SelectActionTrigger: 1
+  m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 0
   m_PlayAudioClipOnSelectEnter: 0
   m_AudioClipForOnSelectEnter: {fileID: 0}
@@ -1332,7 +1352,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverExit: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
-  m_LineType: 0
+  m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -1347,7 +1367,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RaycastTriggerInteraction: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
@@ -1368,10 +1388,10 @@ MonoBehaviour:
   m_EnableInputActions: 1
   m_PoseProvider: {fileID: 0}
   m_ControllerNode: 5
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
-  m_AxisToPressThreshold: 0.1
+  m_AxisToPressThreshold: 0.2
   m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
@@ -8763,6 +8783,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4907303556366814164, guid: 78c5add7ef195c94d9d75cf35245a326,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8023427915527834179, guid: 78c5add7ef195c94d9d75cf35245a326,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8832,6 +8857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379096513601369210, guid: 78c5add7ef195c94d9d75cf35245a326,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c5add7ef195c94d9d75cf35245a326, type: 3}
@@ -9584,6 +9614,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5b6c2f68addb63847b151f0d41a9d3b1, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b6c2f68addb63847b151f0d41a9d3b1, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b6c2f68addb63847b151f0d41a9d3b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11554,10 +11588,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7982991789863648110, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
         type: 3}
       propertyPath: m_Name
       value: Boule 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 612f06427c7b447429aebfcccc3ed5a6, type: 3}
@@ -14694,10 +14738,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7982991789863648110, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
         type: 3}
       propertyPath: m_Name
       value: Boule 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 612f06427c7b447429aebfcccc3ed5a6, type: 3}
@@ -14854,10 +14908,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7982991789863648110, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
         type: 3}
       propertyPath: m_Name
       value: Boule 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 612f06427c7b447429aebfcccc3ed5a6, type: 3}
@@ -15127,10 +15191,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 7982991789863648110, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
         type: 3}
       propertyPath: m_Name
       value: Boccini
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909224347576154389, guid: 612f06427c7b447429aebfcccc3ed5a6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 612f06427c7b447429aebfcccc3ed5a6, type: 3}
@@ -15674,7 +15748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1639817579}
   - component: {fileID: 1639817580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BottleTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,5 +1,11 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: Blimp
+Author: Poly by Google
+URL: https://poly.google.com/view/aSTqZAH_EkP
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Bottle of wine
 Author: Poly by Google
 URL: https://poly.google.com/view/65Hf2EMEo4s
@@ -15,12 +21,6 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: la boule
 Author: bryan burgat
 URL: https://poly.google.com/view/elKlgIbZX_m
-License: Creative Commons CC-BY
-https://creativecommons.org/licenses/by/3.0/legalcode
-
-Title: Wine bottle
-Author: Poly by Google
-URL: https://poly.google.com/view/9cIBrL3pbex
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

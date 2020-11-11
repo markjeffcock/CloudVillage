@@ -12,6 +12,12 @@ URL: https://poly.google.com/view/65Hf2EMEo4s
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Bridge
+Author: Poly by Google
+URL: https://poly.google.com/view/9oToSb_rBKY
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Glass of wine
 Author: Poly by Google
 URL: https://poly.google.com/view/apyVDvUlu-_
@@ -33,6 +39,12 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Wood bridge
 Author: Poly by Google
 URL: https://poly.google.com/view/ccxRFIgIvIL
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Wood Bridge
+Author: Poly by Google
+URL: https://poly.google.com/view/1uQSi6qTp6o
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

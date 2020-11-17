@@ -1,0 +1,12 @@
+To Do:
+
+Airship Wheel doesn't run on Axis (High)
+Bridges No acknowledgement of creators (Medium) 
+Venice No route from door to High bridge (Medium)
+Venice Manhole cover too high (Low)
+Venice Path too High (Low)
+Venice Steps too Bright (Low)
+Houses Empty & usually fall through floor (Low)
+
+----------
+Completed:

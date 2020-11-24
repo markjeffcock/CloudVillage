@@ -44818,7 +44818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f764e45515c3d64ca8b3191aef7a4b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   inputSource: 4
   gravity: -9.81
   groundLayer:

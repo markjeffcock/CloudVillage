@@ -18,6 +18,12 @@ URL: https://poly.google.com/view/9oToSb_rBKY
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Croissant
+Author: Poly by Google
+URL: https://poly.google.com/view/8ESbpaPHM5i
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Espresso cup
 Author: Poly by Google
 URL: https://poly.google.com/view/deH_Cq5BwIK
@@ -39,6 +45,12 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: la boule
 Author: bryan burgat
 URL: https://poly.google.com/view/elKlgIbZX_m
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Plate
+Author: Poly by Google
+URL: https://poly.google.com/view/9RpiicivMJi
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

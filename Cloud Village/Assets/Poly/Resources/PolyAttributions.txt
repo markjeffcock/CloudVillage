@@ -1,5 +1,11 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: Balloons
+Author: Ian MacGillivray
+URL: https://poly.google.com/view/8kBCtHphxJU
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Blimp
 Author: Poly by Google
 URL: https://poly.google.com/view/aSTqZAH_EkP
@@ -39,6 +45,12 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Glass of wine
 Author: Poly by Google
 URL: https://poly.google.com/view/apyVDvUlu-_
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Hot Air Balloon
+Author: Poly by Google
+URL: https://poly.google.com/view/ascrGCCFjFx
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

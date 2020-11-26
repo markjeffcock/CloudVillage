@@ -2,13 +2,14 @@ To Do:
 
 Airship Wheel doesn't run on Axis (High)
 Bridges No acknowledgement of creators (Medium) 
-Venice No route from door to High bridge (Medium)
-Venice Manhole cover too high (Low)
-Venice Path too High (low)
+
 Houses Empty & usually fall through floor (Low)
 
 ----------
 Completed:
 
 Venice Steps too Bright (Low)
+Venice Path too High (low)
+Venice No route from door to High bridge (Medium)
+Venice Manhole cover too high (Low)
 Venice Path too High (low)

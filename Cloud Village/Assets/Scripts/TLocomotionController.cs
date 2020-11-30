@@ -12,6 +12,10 @@ public class TLocomotionController : MonoBehaviour
     private XRRayInteractor rightRayInteractor; 
     private XRRayInteractor leftRayInteractor;
 
+    public bool EnableLeftTeleport { get; set; }  = true;
+    public bool EnableRightTeleport { get; set; } = true;
+
+
     private void Start()
     {
         if (rightTeleportRay) 
@@ -26,13 +30,13 @@ public class TLocomotionController : MonoBehaviour
        if(leftTeleportRay)
         {
             leftRayInteractor.allowSelect = CheckIfActivated(leftTeleportRay); 
-            leftTeleportRay.gameObject.SetActive(CheckIfActivated(leftTeleportRay));
+            leftTeleportRay.gameObject.SetActive(EnableLeftTeleport && CheckIfActivated(leftTeleportRay));
         }
 
         if (rightTeleportRay)
         {
             rightRayInteractor.allowSelect = CheckIfActivated(rightTeleportRay); 
-            rightTeleportRay.gameObject.SetActive(CheckIfActivated(rightTeleportRay));
+            rightTeleportRay.gameObject.SetActive(EnableRightTeleport && CheckIfActivated(rightTeleportRay));
         }
     }
 

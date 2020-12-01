@@ -30,6 +30,12 @@ URL: https://poly.google.com/view/8ESbpaPHM5i
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Door
+Author: Poly by Google
+URL: https://poly.google.com/view/6sqMmqfwKip
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Espresso cup
 Author: Poly by Google
 URL: https://poly.google.com/view/deH_Cq5BwIK
@@ -51,6 +57,18 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Hot Air Balloon
 Author: Poly by Google
 URL: https://poly.google.com/view/ascrGCCFjFx
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Kitchen
+Author: Poly by Google
+URL: https://poly.google.com/view/b90F1JhGrA4
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Kitchen v3
+Author: sirkitree
+URL: https://poly.google.com/view/38PMRiku8qj
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

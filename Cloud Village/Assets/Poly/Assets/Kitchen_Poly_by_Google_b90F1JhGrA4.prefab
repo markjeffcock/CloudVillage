@@ -441,7 +441,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7165922016148398171}
-  - component: {fileID: 789025003245559360}
   m_Layer: 0
   m_Name: Kitchen_Poly_by_Google_b90F1JhGrA4
   m_TagString: Untagged
@@ -464,19 +463,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &789025003245559360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6009960189544005534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0c7f9abd0af2840a99d45af7227d62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asset: {fileID: 11400000, guid: 8b8bca6f7f6c7a747a8d28b7055bb1c4, type: 2}
 --- !u!1 &8691901095858510652
 GameObject:
   m_ObjectHideFlags: 0

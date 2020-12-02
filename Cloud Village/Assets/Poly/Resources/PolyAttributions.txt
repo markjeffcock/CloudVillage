@@ -54,6 +54,12 @@ URL: https://poly.google.com/view/apyVDvUlu-_
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Handle
+Author: Jon Moore
+URL: https://poly.google.com/view/4tXc0S1dhBF
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Hot Air Balloon
 Author: Poly by Google
 URL: https://poly.google.com/view/ascrGCCFjFx
@@ -63,12 +69,6 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Kitchen
 Author: Poly by Google
 URL: https://poly.google.com/view/b90F1JhGrA4
-License: Creative Commons CC-BY
-https://creativecommons.org/licenses/by/3.0/legalcode
-
-Title: Kitchen v3
-Author: sirkitree
-URL: https://poly.google.com/view/38PMRiku8qj
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 

@@ -166,7 +166,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6780232355376239542}
   - component: {fileID: 1282458808236066522}
-  - component: {fileID: 6356703621810611920}
   m_Layer: 0
   m_Name: PbrOpaqueDoubleSided_p1
   m_TagString: Untagged
@@ -227,11 +226,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &6356703621810611920
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7643432685332979726}
-  m_Mesh: {fileID: -6277980841696868075, guid: 6fda724e68b1cda49ad47568916d837b, type: 2}

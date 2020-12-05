@@ -15,7 +15,7 @@ public class Airship : MonoBehaviour
     void Update()
     {
         // We'll move the airship forward at a basic speed
-        transform.Translate(Vector3.forward * Time.deltaTime * baseSpeed);
+        transform.Translate(Vector3.left * Time.deltaTime * baseSpeed);
 
     }
 }

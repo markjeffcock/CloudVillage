@@ -2929,7 +2929,7 @@ HingeJoint:
   m_Anchor: {x: 1.14, y: 2, z: -0.26}
   m_Axis: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 16.078064, y: 2.5900853, z: 2.7569175}
+  m_ConnectedAnchor: {x: 16.063442, y: 2.5905132, z: 2.7414196}
   m_UseSpring: 1
   m_Spring:
     spring: 0
@@ -51815,6 +51815,24 @@ Transform:
   m_Father: {fileID: 1103101908}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1988030562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2633507069799375473, guid: 13848395fc3628747b1e1647ec0d4c95,
+    type: 3}
+  m_PrefabInstance: {fileID: 588512912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1988030563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988030562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59d399a6d26a2d44979a05ca5fda926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1989206705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9153078321521241140, guid: c7ebaf2c6c5a70e4ba90d3f982a987ee,

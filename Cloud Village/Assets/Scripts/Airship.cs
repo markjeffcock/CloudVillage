@@ -12,6 +12,8 @@ public class Airship : MonoBehaviour
     public Transform forwardBack;
     public Transform upDown;
 
+    public Transform Move1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +25,14 @@ public class Airship : MonoBehaviour
     {
         // We'll move the airship forward at a basic speed
         transform.Translate(Vector3.left * Time.deltaTime * baseSpeed);
+        // Also Move ..
+        Move1.transform.Translate(Vector3.left * Time.deltaTime * baseSpeed);
 
         // We'll move the airship up at a basic speed
         transform.Translate(Vector3.up * Time.deltaTime * baseElevate);
+        // Also Move..
+        Move1.transform.Translate(Vector3.up * Time.deltaTime * baseElevate);
+
 
         //Check Control positions
 

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Airship : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class Airship : MonoBehaviour
     public Transform leftRight;
     public Transform forwardBack;
 
+    public CharacterController character;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +22,18 @@ public class Airship : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
+
     {
+        Vector3 direction = new Vector3(baseSpeed, 0, baseElevate);
+
         // We'll move the airship forward at a basic speed
-        transform.Translate(Vector3.left * Time.deltaTime * baseSpeed);
+        transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 
         // We'll move the airship up at a basic speed
-        transform.Translate(Vector3.up * Time.deltaTime * baseElevate);
+        transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
+
+        // Move character
+        character.Move(direction * Time.fixedDeltaTime);
     }
 }

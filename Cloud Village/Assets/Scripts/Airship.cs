@@ -25,7 +25,7 @@ public class Airship : MonoBehaviour
     void FixedUpdate()
 
     {
-        Vector3 direction = new Vector3(-baseSpeed, baseElevate, 0);
+        Vector3 direction = new Vector3(baseSpeed, baseElevate, 0);
 
         // We'll move the airship forward at a basic speed
         transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
@@ -34,6 +34,13 @@ public class Airship : MonoBehaviour
         transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
         // Move character (better if we only WHEN ON Airship)
-        character.Move(direction * Time.fixedDeltaTime);
+        // Move direction to equal change in GLOBAL or LOCAL position?)
+
+        //character.Move(direction * Time.fixedDeltaTime); This nearly worked
+
+        //this seems to move in direction of character facing - i.e. still not a Global movement.
+        character.transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
+        character.transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
+
     }
 }

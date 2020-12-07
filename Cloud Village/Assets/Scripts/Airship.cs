@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Airship : MonoBehaviour
 {
-    private float baseSpeed = 1.0f;
-    private float baseElevate = 1.0f;
+    private float baseSpeed = 0.1f;
+    private float baseElevate = 0.1f;
+
+    public Transform upDown;
+    public Transform leftRight;
+    public Transform forwardBack;
+
     // Start is called before the first frame update
     void Start()
     {

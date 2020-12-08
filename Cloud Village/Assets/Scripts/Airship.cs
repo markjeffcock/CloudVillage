@@ -15,10 +15,17 @@ public class Airship : MonoBehaviour
 
     public CharacterController character;
 
+    private Vector3 lastFramePosition;
+    private Quaternion lastFrameRotation;
+    private Vector3 vehicleMovement;
+    private Quaternion vehicleRotation;
+
     // Start is called before the first frame update
+    // Initialise values to avoid nulls
     void Start()
     {
-        
+        lastFramePosition = transform.position;
+        lastFrameRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -26,6 +33,9 @@ public class Airship : MonoBehaviour
 
     {
         Vector3 direction = new Vector3(baseSpeed, baseElevate, 0);
+        // Vehicle movement since last frame
+        vehicleMovement = transform.position - lastFramePosition;
+        vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
 
         // We'll move the airship forward at a basic speed
         transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
@@ -36,11 +46,11 @@ public class Airship : MonoBehaviour
         // Move character (better if we only WHEN ON Airship)
         // Move direction to equal change in GLOBAL or LOCAL position?)
 
-        //character.Move(direction * Time.fixedDeltaTime); This nearly worked
+        character.Move(vehicleMovement * Time.fixedDeltaTime); 
 
         //this seems to move in direction of character facing - i.e. still not a Global movement.
-        character.transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
-        character.transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
+        //character.transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
+        //character.transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
     }
 }

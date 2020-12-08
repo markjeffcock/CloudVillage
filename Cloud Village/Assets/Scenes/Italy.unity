@@ -17455,6 +17455,50 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ad75fb42ab36bcc488129ce5a1c957c0, type: 2}
+--- !u!1 &557057318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557057319}
+  - component: {fileID: 557057320}
+  m_Layer: 0
+  m_Name: OnBoardAirship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &557057319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557057318}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.0266, y: 3.026599, z: 3.026599}
+  m_Children: []
+  m_Father: {fileID: 1869560143}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &557057320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557057318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9009788, y: 2.2325375, z: 1.3809036}
+  m_Center: {x: 0.06953657, y: 2.0076125, z: -0.060059976}
 --- !u!1 &558888239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6437589510959575676, guid: c7ebaf2c6c5a70e4ba90d3f982a987ee,
@@ -50910,6 +50954,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65471aaa2da915489c235d31b4403aa, type: 3}
+--- !u!4 &1869560143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5558938751081339859, guid: 13848395fc3628747b1e1647ec0d4c95,
+    type: 3}
+  m_PrefabInstance: {fileID: 588512912}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1886211070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52687,7 +52737,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &2066550199
 BoxCollider:

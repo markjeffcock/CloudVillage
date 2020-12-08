@@ -35,6 +35,8 @@ public class Airship : MonoBehaviour
     void FixedUpdate()
 
     {
+        //CHeck Postion of the player character
+        
         currentPlayerPosition = character.gameObject.transform.position;
 
         // Only Move if someone on Board
@@ -45,7 +47,7 @@ public class Airship : MonoBehaviour
             vehicleMovement = transform.position - lastFramePosition;
             vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
 
-            // Capture current position
+            // Capture current position of Airship
             lastFramePosition = transform.position;
             lastFrameRotation = transform.rotation;
 
@@ -55,15 +57,7 @@ public class Airship : MonoBehaviour
             // We'll move the airship up at a basic speed
             transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
-            // Move character (better if we only WHEN ON Airship)
-            // Character MOVe not working when we capture small current positions (as above) 
-            // Idea A (not with deltaTime)
-            // Idea: change to Move to Wheel Position (after making this work ONLY when on Airship)
-            // Idea 2: try character.SImpleMove
-            // Idea 3: try transform of character to WheelPosition
-            // TempIdea - large box collider behind character.
-
-            // Initial version character.Move(vehicleMovement * Time.fixedDeltaTime); 
+            // Move the Player in step with the Airship
             character.Move(vehicleMovement);
         }
 

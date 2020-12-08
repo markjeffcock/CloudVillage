@@ -37,6 +37,10 @@ public class Airship : MonoBehaviour
         vehicleMovement = transform.position - lastFramePosition;
         vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
 
+        // Capture current position
+        lastFramePosition = transform.position;
+        lastFrameRotation = transform.rotation;
+
         // We'll move the airship forward at a basic speed
         transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 

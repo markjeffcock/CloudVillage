@@ -48,13 +48,16 @@ public class Airship : MonoBehaviour
         transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
         // Move character (better if we only WHEN ON Airship)
-        // Move direction to equal change in GLOBAL or LOCAL position?)
+        // Character MOVe not working when we capture small current positions (as above) 
+        // Idea A (not with deltaTime)
+        // Idea: change to Move to Wheel Position (after making this work ONLY when on Airship)
+        // Idea 2: try character.SImpleMove
+        // Idea 3: try transform of character to WheelPosition
+        // TempIdea - large box collider behind character.
 
-        character.Move(vehicleMovement * Time.fixedDeltaTime); 
+        // Initial version character.Move(vehicleMovement * Time.fixedDeltaTime); 
+        character.Move(vehicleMovement);
 
-        //this seems to move in direction of character facing - i.e. still not a Global movement.
-        //character.transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
-        //character.transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
     }
 }

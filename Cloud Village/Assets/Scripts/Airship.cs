@@ -40,9 +40,9 @@ public class Airship : MonoBehaviour
     {
         lastFramePosition = transform.position;
         lastFrameRotation = transform.rotation;
-        initialForwardBackRotation = forwardBack.rotation.x;
-        initialUpDownPosition = upDown.position.y;
-        initialLeftRightRotation = leftRight.rotation.x;
+        initialForwardBackRotation = forwardBack.localRotation.x;
+        initialUpDownPosition = upDown.localPosition.y;
+        initialLeftRightRotation = leftRight.localRotation.x;
     }
 
     // Update is called once per frame
@@ -64,8 +64,8 @@ public class Airship : MonoBehaviour
             vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
 
             // Capture current position of Airship
-            lastFramePosition = transform.position;
-            lastFrameRotation = transform.rotation;
+            lastFramePosition = transform.localPosition;
+            lastFrameRotation = transform.localRotation;
 
             // We'll move the airship forward at a basic speed (dependednt on position of Handle)
             baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;

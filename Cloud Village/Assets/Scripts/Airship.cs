@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Airship : MonoBehaviour
 {
-    private float baseSpeed = 0.2f;
+    private float baseSpeed = 0.0f;
     private float baseElevate = 0.2f;
 
     public Transform upDown;
@@ -15,6 +15,10 @@ public class Airship : MonoBehaviour
 
     public CharacterController character;
     public Collider onBoard;
+
+    private float initialForwardBackRotation;
+    private float forwardBackRotation;
+    public float forwardBackModifier;
 
     private Vector3 lastFramePosition;
     private Quaternion lastFrameRotation;
@@ -29,15 +33,17 @@ public class Airship : MonoBehaviour
     {
         lastFramePosition = transform.position;
         lastFrameRotation = transform.rotation;
+        initialForwardBackRotation = upDown.rotation.x;
     }
 
     // Update is called once per frame
     void FixedUpdate()
 
     {
-        //CHeck Postion of the player character
+        //CHeck Postion of the player character & controls
         
         currentPlayerPosition = character.gameObject.transform.position;
+        forwardBackRotation = upDown.rotation.x;
 
         // Only Move if someone on Board
 
@@ -51,8 +57,10 @@ public class Airship : MonoBehaviour
             lastFramePosition = transform.position;
             lastFrameRotation = transform.rotation;
 
-            // We'll move the airship forward at a basic speed
+            // We'll move the airship forward at a basic speed (dependednt on position of Handle)
+            baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;
             transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
+            //transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 
             // We'll move the airship up at a basic speed
             transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
@@ -63,3 +71,6 @@ public class Airship : MonoBehaviour
 
     }
 }
+//leftRein = GameObject.Find("Rein Left").GetComponent<Transform>();
+//            reinGap = rightRein.position.x - leftRein.position.x;
+//            reinRotation = (leftRein.rotation.z + rightRein.rotation.z)/2 ;

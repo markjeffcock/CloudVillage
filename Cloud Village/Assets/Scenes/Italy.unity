@@ -51933,6 +51933,9 @@ MonoBehaviour:
   forwardBack: {fileID: 137373035}
   character: {fileID: 1756882224}
   onBoard: {fileID: 557057320}
+  upDownModifier: 1
+  leftRightModifier: 0
+  forwardBackModifier: 10
 --- !u!1 &1989206705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9153078321521241140, guid: c7ebaf2c6c5a70e4ba90d3f982a987ee,

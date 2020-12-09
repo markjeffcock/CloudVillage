@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Airship : MonoBehaviour
 {
     private float baseSpeed = 0.0f;
-    private float baseElevate = 0.2f;
+    private float baseElevate = 0.0f;
 
     public Transform upDown;
     public Transform leftRight;
@@ -16,6 +16,13 @@ public class Airship : MonoBehaviour
     public CharacterController character;
     public Collider onBoard;
 
+
+    private float initialUpDownPosition;
+    private float upDownPosition;
+    public float upDownModifier;
+    private float initialLeftRightRotation;
+    private float leftRightRotation;
+    public float leftRightModifier; 
     private float initialForwardBackRotation;
     private float forwardBackRotation;
     public float forwardBackModifier;
@@ -33,7 +40,9 @@ public class Airship : MonoBehaviour
     {
         lastFramePosition = transform.position;
         lastFrameRotation = transform.rotation;
-        initialForwardBackRotation = upDown.rotation.x;
+        initialForwardBackRotation = forwardBack.rotation.x;
+        initialUpDownPosition = upDown.position.y;
+        initialLeftRightRotation = leftRight.rotation.x;
     }
 
     // Update is called once per frame
@@ -43,7 +52,8 @@ public class Airship : MonoBehaviour
         //CHeck Postion of the player character & controls
         
         currentPlayerPosition = character.gameObject.transform.position;
-        forwardBackRotation = upDown.rotation.x;
+        forwardBackRotation = forwardBack.rotation.x;
+        upDownPosition = upDown.position.y;
 
         // Only Move if someone on Board
 
@@ -63,6 +73,7 @@ public class Airship : MonoBehaviour
             //transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 
             // We'll move the airship up at a basic speed
+            baseElevate = (upDownPosition - initialUpDownPosition) * upDownModifier;
             transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
             // Move the Player in step with the Airship

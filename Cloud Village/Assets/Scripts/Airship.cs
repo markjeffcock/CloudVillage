@@ -52,8 +52,8 @@ public class Airship : MonoBehaviour
         //CHeck Postion of the player character & controls
         
         currentPlayerPosition = character.gameObject.transform.position;
-        forwardBackRotation = forwardBack.rotation.x;
-        upDownPosition = upDown.position.y;
+        forwardBackRotation = forwardBack.localRotation.x;
+        upDownPosition = upDown.localPosition.y;
 
         // Only Move if someone on Board
 
@@ -64,8 +64,8 @@ public class Airship : MonoBehaviour
             vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
 
             // Capture current position of Airship
-            lastFramePosition = transform.localPosition;
-            lastFrameRotation = transform.localRotation;
+            lastFramePosition = transform.position;
+            lastFrameRotation = transform.rotation;
 
             // We'll move the airship forward at a basic speed (dependednt on position of Handle)
             baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;

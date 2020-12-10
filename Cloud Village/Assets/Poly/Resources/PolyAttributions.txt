@@ -84,6 +84,12 @@ URL: https://poly.google.com/view/9RpiicivMJi
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: PRAGNA TRY 2
+Author: Pragna Bhatt
+URL: https://poly.google.com/view/d6pIyAxmh7Y
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Wine glass
 Author: Poly by Google
 URL: https://poly.google.com/view/0xiCAJbA2d_

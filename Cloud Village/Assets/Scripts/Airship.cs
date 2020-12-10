@@ -17,11 +17,11 @@ public class Airship : MonoBehaviour
     public CharacterController character;
     public Collider onBoard;
 
-    private float initialUpDownPosition;
-    private float upDownPosition;
+    private float initialUpDownRotation;
+    private float upDownRotation;
     public float upDownModifier;
-    private float initialLeftRightPosition;
-    private float leftRightPosition;
+    private float initialLeftRightRotation;
+    private float leftRightRotation;
     public float leftRightModifier; 
     private float initialForwardBackRotation;
     private float forwardBackRotation;
@@ -44,8 +44,8 @@ public class Airship : MonoBehaviour
         lastFramePosition = transform.position;
         //lastFrameRotation = transform.rotation;
         initialForwardBackRotation = forwardBack.localRotation.x;
-        initialUpDownPosition = upDown.localPosition.y;
-        initialLeftRightPosition = leftRight.localPosition.z;
+        initialUpDownRotation = upDown.localRotation.z;
+        initialLeftRightRotation = leftRight.localRotation.x;
     }
 
     // Update is called once per frame
@@ -56,8 +56,8 @@ public class Airship : MonoBehaviour
         
         currentPlayerPosition = character.gameObject.transform.position;
         forwardBackRotation = forwardBack.localRotation.x;
-        upDownPosition = upDown.localPosition.y;
-        leftRightPosition = leftRight.localPosition.z;
+        upDownRotation = upDown.localRotation.y;
+        leftRightRotation = leftRight.localRotation.x;
 
         // Only Move if someone on Board
 
@@ -76,19 +76,19 @@ public class Airship : MonoBehaviour
             transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 
             // We'll move the airship up at a basic speed
-            baseElevate = (upDownPosition - initialUpDownPosition) * upDownModifier;
+            baseElevate = (upDownRotation - initialUpDownRotation) * upDownModifier;
             transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
             // We rotate the airship
-            baseTwist = (leftRightPosition - initialLeftRightPosition) * leftRightModifier;
-            transform.Rotate(Vector3.forward * Time.fixedDeltaTime * baseTwist);
+            baseTwist = (leftRightRotation - initialLeftRightRotation) * leftRightModifier;
+            transform.Rotate(0, Time.fixedDeltaTime * baseTwist, 0);
 
             // Move the Player in step with the Airship
             character.Move(vehicleMovement);
 
             //Rotate any Propellers
-            Rotate1.transform.Rotate(0, 1 * baseSpeed, 0);
-            Rotate2.transform.Rotate(0, 1 * baseSpeed, 0);
+            Rotate1.transform.Rotate(0, 3 * baseSpeed, 0);
+            Rotate2.transform.Rotate(0, 3 * baseSpeed, 0);
         }
 
     }

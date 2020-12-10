@@ -8,6 +8,7 @@ public class Airship : MonoBehaviour
 {
     private float baseSpeed = 0.0f;
     private float baseElevate = 0.0f;
+    private float baseTwist = 0.0f;
 
     public Transform upDown;
     public Transform leftRight;
@@ -16,12 +17,11 @@ public class Airship : MonoBehaviour
     public CharacterController character;
     public Collider onBoard;
 
-
     private float initialUpDownPosition;
     private float upDownPosition;
     public float upDownModifier;
-    private float initialLeftRightRotation;
-    private float leftRightRotation;
+    private float initialLeftRightPosition;
+    private float leftRightPosition;
     public float leftRightModifier; 
     private float initialForwardBackRotation;
     private float forwardBackRotation;
@@ -34,6 +34,9 @@ public class Airship : MonoBehaviour
 
     private Vector3 currentPlayerPosition;
 
+    public GameObject Rotate1;
+    public GameObject Rotate2;
+
     // Start is called before the first frame update
     // Initialise values to avoid nulls
     void Start()
@@ -42,7 +45,7 @@ public class Airship : MonoBehaviour
         lastFrameRotation = transform.rotation;
         initialForwardBackRotation = forwardBack.localRotation.x;
         initialUpDownPosition = upDown.localPosition.y;
-        initialLeftRightRotation = leftRight.localRotation.x;
+        initialLeftRightPosition = leftRight.localPosition.z;
     }
 
     // Update is called once per frame
@@ -54,6 +57,7 @@ public class Airship : MonoBehaviour
         currentPlayerPosition = character.gameObject.transform.position;
         forwardBackRotation = forwardBack.localRotation.x;
         upDownPosition = upDown.localPosition.y;
+        leftRightPosition = leftRight.localPosition.z;
 
         // Only Move if someone on Board
 
@@ -70,18 +74,23 @@ public class Airship : MonoBehaviour
             // We'll move the airship forward at a basic speed (dependednt on position of Handle)
             baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;
             transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
-            //transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 
             // We'll move the airship up at a basic speed
             baseElevate = (upDownPosition - initialUpDownPosition) * upDownModifier;
             transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
+            // We rotate the airship
+            baseTwist = (leftRightPosition - initialLeftRightPosition) * leftRightModifier;
+            transform.Rotate(Vector3.forward * Time.fixedDeltaTime * baseTwist);
+
             // Move the Player in step with the Airship
             character.Move(vehicleMovement);
+
+            //Rotate any Propellers
+            Rotate1.transform.Rotate(0, 1 * forwardBackModifier, 0);
+            Rotate2.transform.Rotate(0, 1 * forwardBackModifier, 0);
         }
 
     }
 }
-//leftRein = GameObject.Find("Rein Left").GetComponent<Transform>();
-//            reinGap = rightRein.position.x - leftRein.position.x;
-//            reinRotation = (leftRein.rotation.z + rightRein.rotation.z)/2 ;
+

@@ -28,9 +28,9 @@ public class Airship : MonoBehaviour
     public float forwardBackModifier;
 
     private Vector3 lastFramePosition;
-    private Quaternion lastFrameRotation;
+    //private Quaternion lastFrameRotation;
     private Vector3 vehicleMovement;
-    private Quaternion vehicleRotation;
+    //private Quaternion vehicleRotation;
 
     private Vector3 currentPlayerPosition;
 
@@ -42,7 +42,7 @@ public class Airship : MonoBehaviour
     void Start()
     {
         lastFramePosition = transform.position;
-        lastFrameRotation = transform.rotation;
+        //lastFrameRotation = transform.rotation;
         initialForwardBackRotation = forwardBack.localRotation.x;
         initialUpDownPosition = upDown.localPosition.y;
         initialLeftRightPosition = leftRight.localPosition.z;
@@ -65,11 +65,11 @@ public class Airship : MonoBehaviour
         {
             // Vehicle movement since last frame
             vehicleMovement = transform.position - lastFramePosition;
-            vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
+            //vehicleRotation = transform.rotation * Quaternion.Inverse(lastFrameRotation);
 
             // Capture current position of Airship
             lastFramePosition = transform.position;
-            lastFrameRotation = transform.rotation;
+            //lastFrameRotation = transform.rotation;
 
             // We'll move the airship forward at a basic speed (dependednt on position of Handle)
             baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;
@@ -87,8 +87,8 @@ public class Airship : MonoBehaviour
             character.Move(vehicleMovement);
 
             //Rotate any Propellers
-            Rotate1.transform.Rotate(0, 1 * forwardBackModifier, 0);
-            Rotate2.transform.Rotate(0, 1 * forwardBackModifier, 0);
+            Rotate1.transform.Rotate(0, 1 * baseSpeed, 0);
+            Rotate2.transform.Rotate(0, 1 * baseSpeed, 0);
         }
 
     }

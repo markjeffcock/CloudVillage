@@ -72,21 +72,22 @@ public class Airship : MonoBehaviour
             lastFramePosition = transform.position;
             lastFrameRotation = transform.rotation;
 
-            // We'll move the airship forward at a basic speed (dependednt on position of Handle)
+            // We'll move the airship forward at a basic speed (dependent on position of Handle)
             baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;
             transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
 
-            // We'll move the airship up at a basic speed
+            // We'll move the airship up at a basic speed (dependent on position of Lever)
             baseElevate = (upDownRotation - initialUpDownRotation) * upDownModifier;
             transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
 
-            // We rotate the airship
+            // We rotate the airship (dependent on position of Wheel)
             baseTwist = (leftRightRotation - initialLeftRightRotation) * leftRightModifier;
             transform.Rotate(0, Time.fixedDeltaTime * baseTwist, 0);
 
             // Move the Player in step with the Airship
             character.Move(vehicleMovement);
             character.transform.Rotate(0, Time.fixedDeltaTime * baseTwist, 0);
+            //character.transform.Rotate(0, vehicleRotation, 0);
 
             //Rotate any Propellers
             Rotate1.transform.Rotate(0, 3 * baseSpeed, 0);

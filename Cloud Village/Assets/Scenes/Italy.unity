@@ -52414,7 +52414,7 @@ MonoBehaviour:
   character: {fileID: 1756882224}
   onBoard: {fileID: 557057320}
   upDownModifier: 1
-  leftRightModifier: 1000
+  leftRightModifier: 10
   forwardBackModifier: 3
   Rotate1: {fileID: 450063166}
   Rotate2: {fileID: 0}

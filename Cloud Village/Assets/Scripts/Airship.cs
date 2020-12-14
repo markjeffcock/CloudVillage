@@ -49,7 +49,7 @@ public class Airship : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
 
     {
         //CHeck Postion of the player character & controls
@@ -74,19 +74,19 @@ public class Airship : MonoBehaviour
 
             // We'll move the airship forward at a basic speed (dependent on position of Handle)
             baseSpeed = (forwardBackRotation - initialForwardBackRotation) * forwardBackModifier;
-            transform.Translate(Vector3.left * Time.fixedDeltaTime * baseSpeed);
+            transform.Translate(Vector3.left * Time.deltaTime * baseSpeed);
 
             // We'll move the airship up at a basic speed (dependent on position of Lever)
             baseElevate = (upDownRotation - initialUpDownRotation) * upDownModifier;
-            transform.Translate(Vector3.up * Time.fixedDeltaTime * baseElevate);
+            transform.Translate(Vector3.up * Time.deltaTime * baseElevate);
 
             // We rotate the airship (dependent on position of Wheel)
             baseTwist = (leftRightRotation - initialLeftRightRotation) * leftRightModifier;
-            transform.Rotate(0, Time.fixedDeltaTime * baseTwist, 0);
+            transform.Rotate(0, Time.deltaTime * baseTwist, 0);
 
             // Move the Player in step with the Airship
             character.Move(vehicleMovement);
-            character.transform.Rotate(0, Time.fixedDeltaTime * baseTwist, 0);
+            character.transform.Rotate(0, Time.deltaTime * baseTwist, 0);
             //character.transform.Rotate(0, vehicleRotation, 0);
 
             //Rotate any Propellers

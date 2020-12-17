@@ -25,9 +25,9 @@ public class NetworkPlayer : MonoBehaviour
         photonView = GetComponent<PhotonView>();
 
         XRRig rig = FindObjectOfType<XRRig>();
-        headRig = rig.transform.Find("Camera Object/VR Camera");
-        leftHandRig = rig.transform.Find("Camera Object/Left Hand");
-        rightHandRig = rig.transform.Find("Camera Object/Right Hand");
+        headRig = rig.transform.Find("Camera Offset/VR Camera");
+        leftHandRig = rig.transform.Find("Camera Offset/Left Hand");
+        rightHandRig = rig.transform.Find("Camera Offset/Right Hand");
 
         if (photonView.IsMine)
         {

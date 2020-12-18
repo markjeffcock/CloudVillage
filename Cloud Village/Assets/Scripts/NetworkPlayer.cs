@@ -35,6 +35,12 @@ public class NetworkPlayer : MonoBehaviour
             {
                 item.enabled = false;
             }
+
+            // suggested in note for Valem M2 video
+            foreach (var item in GetComponentsInChildren<Collider>())
+            {
+                item.enabled = false;
+            }
         }
     }
 

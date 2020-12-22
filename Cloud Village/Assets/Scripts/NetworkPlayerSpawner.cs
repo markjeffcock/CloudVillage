@@ -11,6 +11,8 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
+
+        //this would be where to change colour or add number to spawnedPlayerPrefab
     }
 
     // 

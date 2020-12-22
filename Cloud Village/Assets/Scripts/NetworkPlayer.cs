@@ -31,10 +31,11 @@ public class NetworkPlayer : MonoBehaviour
 
         if (photonView.IsMine)
         {
-            foreach (var item in GetComponentsInChildren<Renderer>())
-            {
-                item.enabled = false;
-            }
+            // temporary comment out to see overlap of heads/hand with Robot Kyle
+            // foreach (var item in GetComponentsInChildren<Renderer>())
+            //{
+            //    item.enabled = false;
+            //}
 
             // suggested in note for Valem M2 video
             foreach (var item in GetComponentsInChildren<Collider>())

@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.XR;
 using Photon.Pun;
 using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
+
 
 public class NetworkPlayer : MonoBehaviour
 {
@@ -12,11 +14,13 @@ public class NetworkPlayer : MonoBehaviour
     public Transform rightHand;
     public Animator leftHandAnimator;
     public Animator rightHandAnimator;
-    public Material material2001;
+    //public Material material2001;
+    public Material[] materialChange = new Material[20];
 
     private PhotonView photonView;
     public SkinnedMeshRenderer robot;
     public int viewId;
+    public TMP_Text displayViewId;
 
     private Transform headRig;
     private Transform leftHandRig;
@@ -50,12 +54,88 @@ public class NetworkPlayer : MonoBehaviour
 
         }
 
-        // Change color of 2nd robot
+        // Show ViewId on forehead
+        displayViewId.text = "" + viewId;
+
+        // Change color of Robots
 
         if (viewId == 2001)
         {
-            robot.material = material2001; 
+            robot.material = materialChange[1]; 
         }
+        if (viewId == 3001)
+        {
+            robot.material = materialChange[2];
+        }
+        if (viewId == 4001)
+        {
+            robot.material = materialChange[3];
+        }
+        if (viewId == 5001)
+        {
+            robot.material = materialChange[4];
+        }
+        if (viewId == 6001)
+        {
+            robot.material = materialChange[5];
+        }
+        if (viewId == 7001)
+        {
+            robot.material = materialChange[6];
+        }
+        if (viewId == 8001)
+        {
+            robot.material = materialChange[7];
+        }
+        if (viewId == 9001)
+        {
+            robot.material = materialChange[8];
+        }
+        if (viewId == 10001)
+        {
+            robot.material = materialChange[9];
+        }
+        if (viewId == 11001)
+        {
+            robot.material = materialChange[10];
+        }
+        if (viewId == 12001)
+        {
+            robot.material = materialChange[11];
+        }
+        if (viewId == 13001)
+        {
+            robot.material = materialChange[12];
+        }
+        if (viewId == 14001)
+        {
+            robot.material = materialChange[13];
+        }
+        if (viewId == 15001)
+        {
+            robot.material = materialChange[14];
+        }
+        if (viewId == 16001)
+        {
+            robot.material = materialChange[15];
+        }
+        if (viewId == 17001)
+        {
+            robot.material = materialChange[16];
+        }
+        if (viewId == 18001)
+        {
+            robot.material = materialChange[17];
+        }
+        if (viewId == 19001)
+        {
+            robot.material = materialChange[18];
+        }
+        if (viewId == 20001)
+        {
+            robot.material = materialChange[19];
+        }
+
     }
 
     // Update is called once per frame

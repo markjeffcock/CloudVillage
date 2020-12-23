@@ -1933,6 +1933,9 @@ MonoBehaviour:
   rightHand: {fileID: 8027912948445107492}
   leftHandAnimator: {fileID: 5847630499675444673}
   rightHandAnimator: {fileID: 5087311795848070071}
+  material2001: {fileID: 2100000, guid: 98ae2fdbe002e194a90d536f59d95824, type: 2}
+  robot: {fileID: 0}
+  viewId: 0
 --- !u!114 &8027912948445109020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,7 +2500,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8826785635643299616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.097}
+  m_LocalPosition: {x: 0, y: 0, z: 0.116}
   m_LocalScale: {x: 0.00013544338, y: 0.00013544338, z: 0.00013544338}
   m_Children:
   - {fileID: 2725612389352618388}
@@ -2666,6 +2669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Right Hand Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686134208196863108, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}

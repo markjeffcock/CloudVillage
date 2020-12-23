@@ -12,8 +12,11 @@ public class NetworkPlayer : MonoBehaviour
     public Transform rightHand;
     public Animator leftHandAnimator;
     public Animator rightHandAnimator;
+    public Material material2001;
 
     private PhotonView photonView;
+    public SkinnedMeshRenderer robot;
+    public int viewId;
 
     private Transform headRig;
     private Transform leftHandRig;
@@ -23,6 +26,8 @@ public class NetworkPlayer : MonoBehaviour
     void Start()
     {
         photonView = GetComponent<PhotonView>();
+        robot = transform.Find("Head/Robot Kyle/Robot2").GetComponent<SkinnedMeshRenderer>();
+        viewId = photonView.ViewID;
 
         XRRig rig = FindObjectOfType<XRRig>();
         headRig = rig.transform.Find("Camera Offset/VR Camera");
@@ -42,6 +47,14 @@ public class NetworkPlayer : MonoBehaviour
             {
                 item.enabled = false;
             }
+
+        }
+
+        // Change color of 2nd robot
+
+        if (viewId == 2001)
+        {
+            robot.material = material2001; 
         }
     }
 

@@ -16862,17 +16862,17 @@ PrefabInstance:
     - target: {fileID: 7838726196316979583, guid: cfbb896800564fc4bb5c6703bd0b6cae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.374194
+      value: 5197.6
       objectReference: {fileID: 0}
     - target: {fileID: 7838726196316979583, guid: cfbb896800564fc4bb5c6703bd0b6cae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 386.5
+      value: -84.38
       objectReference: {fileID: 0}
     - target: {fileID: 7838726196316979583, guid: cfbb896800564fc4bb5c6703bd0b6cae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 124.262405
+      value: 829.2
       objectReference: {fileID: 0}
     - target: {fileID: 7838726196316979583, guid: cfbb896800564fc4bb5c6703bd0b6cae,
         type: 3}
@@ -30048,7 +30048,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   m_SelectActionTrigger: 1
-  m_HideControllerOnSelect: 1
+  m_HideControllerOnSelect: 0
   m_PlayAudioClipOnSelectEnter: 0
   m_AudioClipForOnSelectEnter: {fileID: 0}
   m_PlayAudioClipOnSelectExit: 0
@@ -41718,7 +41718,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1329360715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6d0d22f3ddda948802a0f0c1dc929f, type: 3}
+  m_Script: {fileID: 11500000, guid: e93b95bcd2c0cc943a0ca5ea50d46d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 2143417243}

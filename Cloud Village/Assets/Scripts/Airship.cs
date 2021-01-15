@@ -43,7 +43,7 @@ public class Airship : MonoBehaviour
     {
         lastFramePosition = transform.position;
         lastFrameRotation = transform.rotation;
-        initialForwardBackRotation = forwardBack.localRotation.x;
+        initialForwardBackRotation = forwardBack.localRotation.z;
         initialUpDownRotation = upDown.localRotation.z;
         initialLeftRightRotation = leftRight.localRotation.x;
     }
@@ -55,7 +55,7 @@ public class Airship : MonoBehaviour
         //CHeck Postion of the player character & controls
         
         currentPlayerPosition = character.gameObject.transform.position;
-        forwardBackRotation = forwardBack.localRotation.x;
+        forwardBackRotation = forwardBack.localRotation.z;
         upDownRotation = upDown.localRotation.z;
         leftRightRotation = leftRight.localRotation.x;
 

@@ -91,7 +91,7 @@ public class Airship : MonoBehaviour
 
             //Rotate any Propellers
             Rotate1.transform.Rotate(0, 3 * baseSpeed, 0);
-            Rotate2.transform.Rotate(0, 3 * baseSpeed, 0);
+            //Rotate2.transform.Rotate(0, 3 * baseSpeed, 0);
         }
 
     }

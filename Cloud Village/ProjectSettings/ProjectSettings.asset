@@ -124,10 +124,8 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.127
-  preloadedAssets:
-  - {fileID: 860983302287120735, guid: f161224b62b58af4bb152244b70f9b14, type: 2}
-  - {fileID: 11400000, guid: 816493326e465084085e8a752161d515, type: 2}
+  bundleVersion: 0.128
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -173,7 +171,7 @@ PlayerSettings:
     Android: com.MarkJeffcock.CloudVillage
   buildNumber:
     Standalone: 12
-  AndroidBundleVersionCode: 127
+  AndroidBundleVersionCode: 128
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
